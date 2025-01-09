@@ -10,10 +10,10 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
         multiplies a float
     """
-    def multiplier(n: float) -> float:
+    def f(n: float) -> float:
         """
             returns the multiplies of a float
         """
-        return n * multiplier
+        return float(n * multiplier)
 
-    return make_multiplier
+    return f
